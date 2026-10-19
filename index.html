@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MBTI 여행지 추천</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <!-- 시작 화면 -->
+    <section id="start-screen">
+      <p class="emoji">✈️</p>
+      <h1>MBTI 여행지 추천</h1>
+      <p class="sub">질문 5개에 답하면<br>나에게 딱 맞는 도시를 알려 줄게요.</p>
+      <button id="start-btn" class="primary">시작하기</button>
+    </section>
+
+    <!-- 질문 화면 -->
+    <section id="question-screen" hidden>
+      <p id="progress-text" class="progress-text"></p>
+      <div class="progress"><div id="progress-bar" class="progress-bar"></div></div>
+      <h2 id="question-text"></h2>
+      <div id="options" class="options"></div>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="result-screen" hidden>
+      <p class="sub">당신의 여행 유형은</p>
+      <p id="result-type" class="type"></p>
+      <figure class="photo">
+        <img id="result-photo" alt="">
+        <figcaption>
+          사진: <a id="result-credit" target="_blank" rel="noopener noreferrer"></a>
+        </figcaption>
+      </figure>
+      <h2><span id="result-city"></span> <small id="result-country"></small></h2>
+      <p id="result-intro" class="intro"></p>
+      <h3>이곳에서 할 일 3가지</h3>
+      <ol id="result-todos" class="todos"></ol>
+      <button id="retry-btn" class="primary">다시 하기</button>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

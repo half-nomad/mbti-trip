@@ -1,0 +1,81 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: linear-gradient(160deg, #e0f2fe, #fef3c7);
+  color: #1e293b;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  text-align: center;
+}
+
+h1 { margin: 8px 0; font-size: 1.8rem; }
+h2 { font-size: 1.35rem; margin: 16px 0 8px; line-height: 1.4; }
+h3 { font-size: 1rem; margin: 24px 0 8px; text-align: left; }
+small { font-size: 0.9rem; color: #64748b; font-weight: normal; }
+
+.emoji { font-size: 3rem; margin: 0; }
+.sub { color: #475569; line-height: 1.6; }
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  background: #0ea5e9;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.primary:hover { background: #0284c7; }
+
+.progress-text { margin: 0 0 8px; color: #64748b; font-size: 0.9rem; }
+.progress { height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+.progress-bar { height: 100%; background: #0ea5e9; transition: width 0.3s; }
+
+.options { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+.option {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  text-align: left;
+}
+.option:hover { border-color: #0ea5e9; background: #e0f2fe; }
+
+.type { font-size: 2.6rem; font-weight: 800; color: #0ea5e9; margin: 0; letter-spacing: 4px; }
+
+.photo { margin: 16px 0 0; }
+.photo img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.photo figcaption { font-size: 0.75rem; color: #94a3b8; margin-top: 6px; text-align: right; }
+.photo a { color: inherit; }
+
+.intro { text-align: left; line-height: 1.7; color: #334155; }
+
+.todos { text-align: left; padding-left: 20px; line-height: 1.8; margin: 0; }
